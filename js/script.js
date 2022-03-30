@@ -16,6 +16,9 @@ function calcular(){
 }
 
 function limparCampos(){
-    //agora aqui vê primeiro se não é vazio
-    
+    with (document) {
+        getElementById("curtidas").value = "";
+        getElementById("comentarios").value = "";
+        getElementById("seguidores").value = "";
+    }
 }
