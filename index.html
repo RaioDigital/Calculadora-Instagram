@@ -1,0 +1,92 @@
+<html lang="pt-br">
+  <head>
+    <title>Calculadora</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Calculadora Instagram</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center mb-4">
+        <img
+          src="img/logo_sebrae-01.png"
+          alt="logo_raio"
+          width="300"
+          height="150"
+        />
+        <h1>Calculadora de Engajamento</h1>
+        <h3>Instagram</h3>
+      </div>
+
+      <br />
+
+      <div class="form-label-group">
+        <label class="label-form">Nº de Curtidas</label>
+        <input
+          id="curtidas"
+          type="number"
+          class="form-control"
+          placeholder="Digite a quantidade de Curtidas"
+        />
+      </div>
+      
+      <br />
+
+      <div class="form-label-group">
+        <label class="label-form">Nº de Comentários</label>
+        <input
+          id="comentarios"
+          type="number"
+          class="form-control"
+          placeholder="Digite a quantidade de Comentários"
+        />
+      </div>
+      
+      <br />
+
+      <div class="form-label-group">
+        <label class="label-form">Nº de Seguidores</label>
+        <input
+          id="seguidores"
+          type="number"
+          class="form-control"
+          placeholder="Digite a quantidade de Seguidores"
+        />
+      </div>
+      
+      <br />
+
+      <button
+        class="btn btn-lg btn-primary btn-block"
+        id="calcular"
+        onclick="calcular()"
+      >
+        Calcular Engajamento
+      </button>
+      
+      <br />
+
+      <button
+        class="btn btn-lg btn-primary btn-block"
+        id="limparCampos"
+        type="reset"
+        onclick=""
+      >
+        Apagar Campos
+      </button><br />
+
+      <h1>Sua taxa de engajamento é: </h1>
+      <p id="resultado">???</p>
+
+      <p class="footer_raio">Desenvolvido por Raio Digital &copy; 2022</p>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
