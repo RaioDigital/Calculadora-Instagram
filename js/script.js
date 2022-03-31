@@ -7,18 +7,17 @@ const resultado = document.querySelector("#resultado")
 
 function calcular(){
   //console.log(curtidas.value)
-  //console.log(comentarios.value)
-  //console.log(seguidores.value)  
-
   resultado.value = ((parseInt(curtidas.value) + parseInt(comentarios.value)) / parseInt(seguidores.value)) * 100
   //console.log(seguidores.value)
-  document.getElementById("resultado").innerHTML = resultado.value  
+  document.getElementById("resultado").innerHTML = resultado.value
 }
 
 function limparCampos(){
     with (document) {
         getElementById("curtidas").value = "";
         getElementById("comentarios").value = "";
-        getElementById("seguidores").value = "";
+        getElementById("seguidores").value = "";        
+        getElementById("resultado").innerHTML = "???";
+        curtidas.focus();
     }
 }

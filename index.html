@@ -15,6 +15,7 @@
   <body>    
 
     <div class="container">
+
       <div class="text-center mb-4">
         <img
           src="img/logo_sebrae-01.png"
@@ -24,9 +25,7 @@
         />
         <h1>Calculadora de Engajamento</h1>
         <h3>Instagram</h3>
-      </div>
-
-      <br />
+      </div><br />
 
       <div class="form-label-group">
         <label class="label-form">Nº de Curtidas</label>
@@ -36,9 +35,7 @@
           class="form-control"
           placeholder="Digite a quantidade de Curtidas"
         />
-      </div>
-      
-      <br />
+      </div><br />
 
       <div class="form-label-group">
         <label class="label-form">Nº de Comentários</label>
@@ -48,9 +45,7 @@
           class="form-control"
           placeholder="Digite a quantidade de Comentários"
         />
-      </div>
-      
-      <br />
+      </div><br />
 
       <div class="form-label-group">
         <label class="label-form">Nº de Seguidores</label>
@@ -60,33 +55,36 @@
           class="form-control"
           placeholder="Digite a quantidade de Seguidores"
         />
-      </div>
+      </div><br />
       
-      <br />
-
+      <!--BOTÃO CALCULAR ENGAJAMENTO-->
       <button
         class="btn btn-lg btn-primary btn-block"
         id="calcular"
-        onclick="calcular()"
-      >
+        onclick="calcular()">
         Calcular Engajamento
       </button>
       
       <br />
       
+      <!--BOTÃO LIMPAR CAMPOS-->    
       <button
         class="btn btn-lg btn-primary btn-block"
         id="limparCampos"
-        type="button"
-        onclick="limparCampos()"
-      >
+        type="reset"
+        value="limparCampos"
+        onclick="limparCampos()">
         Limpar Campos
-      </button><br />
+      </button>   
+      
+      <br />            
 
+      <!--RESULTADO DO CALCULO-->
       <h1>Sua taxa de engajamento é: </h1>
-      <p id="resultado">???</p>
+      <p id="resultado">???</p>  
 
-      <p class="footer_raio">Desenvolvido por Raio Digital &copy; 2022</p>
+      <!--RODAPÉ-->
+      <p class="footer_raio">Raio Digital &copy; 2022</p>
     </div>
     <script src="js/script.js"></script>
   </body>
