@@ -8,8 +8,7 @@ body {
 
 h1 {
   font-size: 20px;
-  text-align: center;
-  padding-bottom: 5px;
+  text-align: center;  
   color: #fff;
   font-weight: bold;
 }
@@ -23,9 +22,8 @@ h3 {
 
 .container {
   width: 100%;
-  max-width: 420px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  max-width: 420px;  
+  padding-bottom: 1px;
   margin: auto;
   background-color: #833ab4;
   border-radius: 12px;
@@ -48,21 +46,35 @@ h3 {
   font-size: 40px;
 }
 
-div.container input::-webkit-inner-spin-button { /*Retira as setas dos inputs*/
+/*Retira as setas dos inputs*/
+div.container input::-webkit-inner-spin-button { 
   display: none;
 }
 
 #calcular {
   background-color: #E1306C;
-  border: none;
-  padding-bottom: 10px;
+  border: none;  
   box-shadow: 0 0 10px #fff;
+  border-radius: 5px; 
 }
 
 #limparCampos {
   background-color: #F77737;
   border: none;  
-  box-shadow: 0 0 10px #fff;  
+  box-shadow: 0 0 10px #fff;
+  border-radius: 5px;  
+}
+
+.bloco {
+  color: #fff;
+  list-style-type: none;
+  margin: 0;
+  padding: 20;
+  background-color: #C13584;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .label-form {
@@ -73,4 +85,5 @@ div.container input::-webkit-inner-spin-button { /*Retira as setas dos inputs*/
   color: #fff;
   font-weight: bold;
   text-align: center;
+  padding-top: 10px;
 }
