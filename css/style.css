@@ -1,5 +1,5 @@
 body {
-  padding-top: 0vh;
+  padding-top: 2vh;
   background-image: url("../img/bg_calcularoda_instagram.png");
   background-size: cover;
   background-attachment: fixed;
@@ -55,14 +55,16 @@ div.container input::-webkit-inner-spin-button {
   background-color: #E1306C;
   border: none;  
   box-shadow: 0 0 10px #fff;
-  border-radius: 5px; 
+  border-radius: 5px;
+  margin-right: 33px; 
 }
 
 #limparCampos {
   background-color: #F77737;
   border: none;  
   box-shadow: 0 0 10px #fff;
-  border-radius: 5px;  
+  border-radius: 5px;
+  margin-left: 34px;  
 }
 
 .bloco {
