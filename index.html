@@ -12,10 +12,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Calculadora Instagram</title>
   </head>
-  <body>    
-
+  <body>
     <div class="container">
-
       <div class="text-center mb-2">
         <img
           src="img/logo_sebrae-01.png"
@@ -35,7 +33,8 @@
           class="form-control"
           placeholder="Digite a quantidade de Curtidas"
         />
-      </div><br />
+      </div>
+      <br />
 
       <div class="form-label-group">
         <label class="label-form">Nº de Comentários</label>
@@ -45,7 +44,8 @@
           class="form-control"
           placeholder="Digite a quantidade de Comentários"
         />
-      </div><br />
+      </div>
+      <br />
 
       <div class="form-label-group">
         <label class="label-form">Nº de Seguidores</label>
@@ -55,39 +55,53 @@
           class="form-control"
           placeholder="Digite a quantidade de Seguidores"
         />
-      </div><br />
-      
+      </div>
+      <br />
+
       <!--BOTÃO CALCULAR ENGAJAMENTO-->
       <button
-        class="btn btn-primary btn-md"
+        class="btn btn-primary btn-md btn-block"
         id="calcular"
-        onclick="calcular()">
+        onclick="calcular()"
+      >
         Calcular Engajamento
       </button>
-      
-     
-      
-      <!--BOTÃO LIMPAR CAMPOS-->    
+      <br />
+
+      <!--BOTÃO CONSULTORIA -->
+      <a href="https://lp.sebraeceara.com.br/typ-analise-do-instagram"
+        ><button
+          class="btn btn-primary btn-md btn-block"
+          id="consultoria"
+          type="reset"
+          value="consultoria">
+          Consultoria Grátis do Instagram
+        </button></a>
+      <br />
+
+      <!--BOTÃO LIMPAR CAMPOS-->
       <button
         class="btn btn-primary btn-md"
         id="limparCampos"
         type="reset"
         value="limparCampos"
-        onclick="limparCampos()">
+        onclick="limparCampos()"
+      >
         Limpar Campos
-      </button>  
-      <br />         
-      <br />            
+      </button>
+      <br />
+      <br />
+
       <!--RESULTADO DO CALCULO-->
-      <h1>Sua taxa de engajamento é: </h1>
-      <p id="resultado">???</p> 
-      
-      <ul class="bloco">          
-          <li>Menor que 1% = engajamento baixo</li>
-          <li>Entre 1% e 3.5% = engajamento médio</li>
-          <li>Entre 3.5% e 6% = engajamento alto</li>
-          <li>Mais que 6% = engajamento excelente</li>
-          </ul>
+      <h1>Sua taxa de engajamento é:</h1>
+      <p id="resultado">???</p>
+
+      <ul class="bloco">
+        <li>Menor que 1% = engajamento baixo</li>
+        <li>Entre 1% e 3.5% = engajamento médio</li>
+        <li>Entre 3.5% e 6% = engajamento alto</li>
+        <li>Mais que 6% = engajamento excelente</li>
+      </ul>
 
       <!--RODAPÉ-->
       <p class="footer_raio">Raio Digital &copy; 2022</p>

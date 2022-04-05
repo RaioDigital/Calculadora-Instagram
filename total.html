@@ -13,85 +13,85 @@
     <title>Calculadora Instagram</title>
   </head>
   <style>
-  body {
-  padding-top: 5vh;
-  background-image: url("../img/bg_calcularoda_instagram.png");
-  background-size: cover;
-  background-attachment: fixed;
-  /* background-position-y: -70px;*/
-}
+    body {
+      padding-top: 5vh;
+      background-image: url("../img/bg_calcularoda_instagram.png");
+      background-size: cover;
+      background-attachment: fixed;
+      /* background-position-y: -70px;*/
+    }
 
-h1 {
-  font-size: 20px;
-  text-align: center;
-  padding-bottom: 5px;
-  color: #fff;
-  font-weight: bold;
-}
+    h1 {
+      font-size: 20px;
+      text-align: center;
+      padding-bottom: 5px;
+      color: #fff;
+      font-weight: bold;
+    }
 
-h3 {
-  font-size: 25px;
-  text-align: center;
-  color: #fff;
-  font-weight: bold;
-}
+    h3 {
+      font-size: 25px;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+    }
 
-.container {
-  width: 100%;
-  max-width: 420px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: auto;
-  background-color: #833ab4;
-  border-radius: 12px;
-  box-shadow: 0 0 10px #fff;
-}
+    .container {
+      width: 100%;
+      max-width: 420px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin: auto;
+      background-color: #833ab4;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #fff;
+    }
 
-#resultado {
-  align-items: center;
-  color: #fff;
-  text-align: center;
-  font-weight: bold;
-  font-size: 40px;
-}
+    #resultado {
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+      font-size: 40px;
+    }
 
-#taxa {
-  align-items: center;
-  color: #fff;
-  text-align: center;
-  font-weight: bold;
-  font-size: 40px;
-}
+    #taxa {
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+      font-size: 40px;
+    }
 
-div.container input::-webkit-inner-spin-button { /*Retira as setas dos inputs*/
-  display: none;
-}
+    div.container input::-webkit-inner-spin-button {
+      /*Retira as setas dos inputs*/
+      display: none;
+    }
 
-#calcular {
-  background-color: #E1306C;
-  border: none;
-  padding-bottom: 10px;
-  box-shadow: 0 0 10px #fff;
-}
+    #calcular {
+      background-color: #e1306c;
+      border: none;
+      padding-bottom: 10px;
+      box-shadow: 0 0 10px #fff;
+    }
 
-#limparCampos {
-  background-color: #F77737;
-  border: none;  
-  box-shadow: 0 0 10px #fff;  
-}
+    #limparCampos {
+      background-color: #f77737;
+      border: none;
+      box-shadow: 0 0 10px #fff;
+    }
 
-.label-form {
-  color: #fff;
-}
+    .label-form {
+      color: #fff;
+    }
 
-.footer_raio {
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-}
+    .footer_raio {
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+    }
   </style>
-  <body>    
-
+  <body>
     <div class="container">
       <div class="text-center mb-4">
         <img
@@ -115,7 +115,7 @@ div.container input::-webkit-inner-spin-button { /*Retira as setas dos inputs*/
           placeholder="Digite a quantidade de Curtidas"
         />
       </div>
-      
+
       <br />
 
       <div class="form-label-group">
@@ -127,7 +127,7 @@ div.container input::-webkit-inner-spin-button { /*Retira as setas dos inputs*/
           placeholder="Digite a quantidade de Comentários"
         />
       </div>
-      
+
       <br />
 
       <div class="form-label-group">
@@ -139,7 +139,7 @@ div.container input::-webkit-inner-spin-button { /*Retira as setas dos inputs*/
           placeholder="Digite a quantidade de Seguidores"
         />
       </div>
-      
+
       <br />
 
       <button
@@ -149,46 +149,49 @@ div.container input::-webkit-inner-spin-button { /*Retira as setas dos inputs*/
       >
         Calcular Engajamento
       </button>
-      
+
       <br />
-      
+
       <button
         class="btn btn-lg btn-primary btn-block"
         id="limparCampos"
         type="button"
         onclick="limparCampos()"
       >
-        Limpar Campos
-      </button><br />
+        Limpar Campos</button
+      ><br />
 
-      <h1>Sua taxa de engajamento é: </h1>
+      <h1>Sua taxa de engajamento é:</h1>
       <p id="resultado">???</p>
 
       <p class="footer_raio">Desenvolvido por Raio Digital &copy; 2022</p>
     </div>
+
     <script>
-    const curtidas = document.querySelector("#curtidas")
-const comentarios = document.querySelector("#comentarios")
-const seguidores = document.querySelector("#seguidores")
-const resultado = document.querySelector("#resultado")
+      const curtidas = document.querySelector("#curtidas");
+      const comentarios = document.querySelector("#comentarios");
+      const seguidores = document.querySelector("#seguidores");
+      const resultado = document.querySelector("#resultado");
 
-function calcular(){
-  //console.log(curtidas.value)
-  //console.log(comentarios.value)
-  
+      function calcular() {
+        //console.log(curtidas.value)
+        //console.log(comentarios.value)
 
-  resultado.value = ((parseInt(curtidas.value) + parseInt(comentarios.value)) / parseInt(seguidores.value)) * 100
-  //console.log(seguidores.value)
-  document.getElementById("resultado").innerHTML = resultado.value  
-}
+        resultado.value =
+          ((parseInt(curtidas.value) + parseInt(comentarios.value)) /
+            parseInt(seguidores.value)) *
+          100;
+        //console.log(seguidores.value)
+        document.getElementById("resultado").innerHTML = resultado.value;
+      }
 
-function limparCampos(){
-    with (document) {
-        getElementById("curtidas").value = "";
-        getElementById("comentarios").value = "";
-        getElementById("seguidores").value = "";
-    }
-}
+      function limparCampos() {
+        with (document) {
+          getElementById("curtidas").value = "";
+          getElementById("comentarios").value = "";
+          getElementById("seguidores").value = "";
+        }
+      }
     </script>
   </body>
 </html>

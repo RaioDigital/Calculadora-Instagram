@@ -1,5 +1,5 @@
 body {
-  padding-top: 2vh;
+  padding-top: 1vh;
   background-image: url("../img/bg_calcularoda_instagram.png");
   background-size: cover;
   background-attachment: fixed;
@@ -26,9 +26,9 @@ h3 {
   padding-bottom: 1px;
   margin: auto;
   background-color: #833ab4;
-  border-radius: 12px;
+  border-radius: 12px;  
   box-shadow: 0 0 10px #fff;
-}
+  }
 
 #resultado {
   align-items: center;
@@ -56,7 +56,14 @@ div.container input::-webkit-inner-spin-button {
   border: none;  
   box-shadow: 0 0 10px #fff;
   border-radius: 5px;
-  width: auto;  
+   
+}
+
+#consultoria {
+  background-color: #FD1D1D;
+  border: none;  
+  box-shadow: 0 0 10px #fff;
+  border-radius: 5px;
 }
 
 #limparCampos {
@@ -64,8 +71,7 @@ div.container input::-webkit-inner-spin-button {
   border: none;  
   box-shadow: 0 0 10px #fff;
   border-radius: 5px;
-  width: auto;
-  float: right;
+  margin:0px 50px 0px 120px;
 }
 
 .bloco {
