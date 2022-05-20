@@ -50,28 +50,34 @@ h3 {
 div.container input::-webkit-inner-spin-button { 
   display: none;
 }
+button:hover{
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: none;  
+}
 
 #calcular {
   background-color: #E1306C;
   border: none;  
   box-shadow: 0 0 10px #fff;
   border-radius: 5px;
-   
 }
 
-#consultoria {
+#consultoria{
   background-color: #FD1D1D;
   border: none;  
   box-shadow: 0 0 10px #fff;
-  border-radius: 5px;
+  border-radius: 5px;  
 }
 
 #limparCampos {
   background-color: #F77737;
+  /*margin:0px 50px 0px 120px;*/
   border: none;  
   box-shadow: 0 0 10px #fff;
-  border-radius: 5px;
-  margin:0px 50px 0px 120px;
+  border-radius: 5px;    
 }
 
 .bloco {
