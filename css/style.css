@@ -50,6 +50,13 @@ h3 {
 div.container input::-webkit-inner-spin-button { 
   display: none;
 }
+button:hover{
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: none;  
+}
 
 button:hover{
   font-weight: bold;
