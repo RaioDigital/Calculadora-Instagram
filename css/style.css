@@ -58,6 +58,7 @@ a:hover {
   text-decoration: none;  
 }
 
+/*CORREÇOES DIA 20/05/2022*/
 button:hover{
   font-weight: bold;
 }
